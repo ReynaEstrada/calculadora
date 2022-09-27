@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import freeCodeCampLogo from './img/freecodecamp-logo.png';
+import Button from './components/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='freecodecamp-logo-contenedor'>
+        <img
+          src={freeCodeCampLogo}
+          className='freecodecamp-logo'
+          alt='Logo de freeCodeCamp' />
+     </div>
+     <div className='contenedor-calculadora'>
+        <div className='fila'>
+          <Button>1</Button>
+        </div>
+        <div className='fila'></div>
+        <div className='fila'></div>
+        <div className='fila'></div>
+        <div className='fila'></div>
+     </div>
     </div>
   );
 }
